@@ -52,6 +52,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -67,9 +69,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     };
   },
 
-  mounted: function mounted() {
-    console.log("ListCollapse1.vue mounted");
-  },
+  mounted: function mounted() {},
   methods: {
     lc1_toggle: function lc1_toggle() {
       this.lc1_collapse = !this.lc1_collapse;
@@ -83,15 +83,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  return _c('nav', {
     staticClass: "vc_listcollapse1"
-  }, [_c('p', {
+  }, [_c('header', {
     on: {
       "click": function($event) {
         _vm.lc1_toggle()
       }
     }
-  }, [_vm._v("Items:")]), _vm._v(" "), _c('span', [_vm._v("+")]), _vm._v(" "), _c('span', [_vm._v("-")]), _vm._v(" "), _vm._l((_vm.items), function(i) {
+  }, [_c('p', [_vm._v("Items:")]), _vm._v(" "), (_vm.lc1_collapse === false) ? _c('span', [_vm._v("+")]) : _c('span', [_vm._v("-")])]), _vm._v(" "), _vm._l((_vm.items), function(i) {
     return _c('ul', {
       directives: [{
         name: "show",

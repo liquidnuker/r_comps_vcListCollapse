@@ -1,9 +1,12 @@
 .vc_listcollapse1 {
+  header {
+    cursor: pointer;
+  }
+
   p {
     @extend %display--inline-block;
     @extend %font--bold;
     background-color: #ccc;
-    cursor: pointer;
   }
 
   span {

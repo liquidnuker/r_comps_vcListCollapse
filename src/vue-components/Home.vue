@@ -11,7 +11,7 @@ import {inject} from "../js/componentinjector.js";
   export default {
     data () {
       return {    
-      }
+      };
     },
     mounted: function () {
       this.mountListCollapse();
@@ -19,12 +19,12 @@ import {inject} from "../js/componentinjector.js";
     methods: {
       mountListCollapse: function() {
         const ListCollapse1 = resolve => {
-          require.ensure(['./ListCollapse1.vue'], () => {
-            resolve(require('./ListCollapse1.vue'))
-          })
+          require.ensure(["./ListCollapse1.vue"], () => {
+            resolve(require("./ListCollapse1.vue"));
+          });
         };
         inject("#listCollapse1_mount", ListCollapse1);
       }
     }
-  }
+  };
 </script>

@@ -12,6 +12,8 @@
 @import "vendor/mq"; 
 @import "layout/grid";
 
+@import "vc_listcollapse1";
+
 // show the active breakpoint (_mq.scss)
 // ==================================================/
 @include mq-show-breakpoints;

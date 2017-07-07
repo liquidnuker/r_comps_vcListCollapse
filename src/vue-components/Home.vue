@@ -7,6 +7,7 @@
   </div>
 </template>
 <script>
+import {inject} from "../js/componentinjector.js";
   export default {
     data () {
       return {    
@@ -18,11 +19,11 @@
     methods: {
       mountListCollapse: function() {
         const ListCollapse1 = resolve => {
-          require.ensure(['ListCollapse1.vue'], () => {
-            resolve(require('ListCollapse1.vue'))
+          require.ensure(['./ListCollapse1.vue'], () => {
+            resolve(require('./ListCollapse1.vue'))
           })
         };
-        inject("#ListCollapse1_mount", ListCollapse1);
+        inject("#listCollapse1_mount", ListCollapse1);
       }
     }
   }

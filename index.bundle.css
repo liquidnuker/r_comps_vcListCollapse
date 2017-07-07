@@ -7,6 +7,9 @@
   .row:after {
     clear: both; }
 
+.vc_listcollapse1 p, .vc_listcollapse1 span {
+  display: inline-block; }
+
 input, textarea, select, html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,6 +25,12 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0; }
+
+.vc_listcollapse1 span {
+  padding: 4px; }
+
+.vc_listcollapse1 p, .vc_listcollapse1 span {
+  font-weight: bold; }
 
 *,
 *:before,
@@ -770,8 +779,13 @@ template {
   .col-lg-1 {
     width: 8.33333333%; } }
 
-.vc_listcollapse1 {
-  background-color: #000; }
+.vc_listcollapse1 p {
+  background-color: #ccc;
+  cursor: pointer; }
+
+.vc_listcollapse1 span {
+  background-color: #666;
+  color: #fff; }
 
 body:before {
   background-color: #FCF8E3;

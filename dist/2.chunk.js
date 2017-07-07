@@ -45,6 +45,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -55,12 +62,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         itemName: "item2"
       }, {
         itemName: "item3"
-      }]
+      }],
+      lc1_collapse: false
     };
   },
 
   mounted: function mounted() {
     console.log("ListCollapse1.vue mounted");
+  },
+  methods: {
+    lc1_toggle: function lc1_toggle() {
+      this.lc1_collapse = !this.lc1_collapse;
+    }
   }
 });
 
@@ -72,7 +85,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "vc_listcollapse1"
-  })
+  }, [_c('p', {
+    on: {
+      "click": function($event) {
+        _vm.lc1_toggle()
+      }
+    }
+  }, [_vm._v("Items:")]), _vm._v(" "), _c('span', [_vm._v("+")]), _vm._v(" "), _c('span', [_vm._v("-")]), _vm._v(" "), _vm._l((_vm.items), function(i) {
+    return _c('ul', {
+      directives: [{
+        name: "show",
+        rawName: "v-show",
+        value: (_vm.lc1_collapse),
+        expression: "lc1_collapse"
+      }]
+    }, [_c('li', [_vm._v("\n      " + _vm._s(i.itemName) + "\n    ")])])
+  })], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {

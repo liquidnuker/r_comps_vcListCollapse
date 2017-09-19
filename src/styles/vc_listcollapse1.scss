@@ -1,19 +1,59 @@
-.vc_listcollapse1 {
+// vcListCollapse1
+// ==================================================/
+@mixin vcListCollapse1-01_theme() {
+  .vcListCollapse1-01 {
+    header {
+      background-color: #141416;
+    }
+
+    p {
+      color: #f0f0f0;
+    }
+
+    li {
+      background-color: #1c1d22;
+      color: #d5d5d5;
+    }
+
+    .vcListCollapse1-01_content {
+      background-color: #343437;
+    }
+  }
+
+  .vcListCollapse1-01_icon {
+    svg {
+      border: 1px solid #000;
+      background-color: #e6e6e6;
+      fill: #be0101;
+    }
+  } 
+}
+@include vcListCollapse1-01_theme();
+
+.vcListCollapse1-01 {
   header {
+    @extend %padd--4;
     cursor: pointer;
   }
 
   p {
     @extend %display--inline-block;
     @extend %font--bold;
-    background-color: #ccc;
+    vertical-align: middle;
   }
 
-  span {
-    @extend %display--inline-block;
-    @extend %padd--4;
-    @extend %font--bold;
-    background-color: #666;
-    color: #fff;
+}
+
+.vcListCollapse1-01_icon {
+  @extend %display--inline-block;
+  vertical-align: middle;
+  
+  svg {
+    width: 16px;
+    height: 16px;
   }
+}
+
+.vcListCollapse1-01_content {
+  @extend %padd--4;
 }

@@ -1,30 +1,23 @@
 <template>
   <div>
-    <!-- ListCollapse1 mount -->
-    <div id="listCollapse1_mount">
-    </div>
-    <!-- end ListCollapse1 mount -->
+    <!-- vcListCollapse1 -->
+    <vcListCollapse101 />
+    <!-- end vcListCollapse1 -->
   </div>
 </template>
 <script>
-import {inject} from "../js/componentinjector.js";
+const vcListCollapse101 = () => import ('./vcListCollapse1.vue');
   export default {
     data () {
       return {    
       };
     },
+    components: {
+      vcListCollapse101: vcListCollapse101
+    },
     mounted: function () {
-      this.mountListCollapse();
     },
     methods: {
-      mountListCollapse: function() {
-        const ListCollapse1 = resolve => {
-          require.ensure(["./ListCollapse1.vue"], () => {
-            resolve(require("./ListCollapse1.vue"));
-          });
-        };
-        inject("#listCollapse1_mount", ListCollapse1);
-      }
     }
   };
 </script>

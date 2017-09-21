@@ -1,7 +1,7 @@
 // vcListCollapse1
 // ==================================================/
-@mixin vcListCollapse1-01_theme() {
-  .vcListCollapse1-01 {
+@mixin vueListCollapse101_theme() {
+  .vueListCollapse101 {
     header {
       background-color: #141416;
     }
@@ -15,12 +15,12 @@
       color: #d5d5d5;
     }
 
-    .vcListCollapse1-01_content {
+    .vueListCollapse101_content {
       background-color: #343437;
     }
   }
 
-  .vcListCollapse1-01_icon {
+  .vueListCollapse101_icon {
     svg {
       border: 1px solid #000;
       background-color: #e6e6e6;
@@ -28,9 +28,9 @@
     }
   } 
 }
-@include vcListCollapse1-01_theme();
+@include vueListCollapse101_theme();
 
-.vcListCollapse1-01 {
+.vueListCollapse101 {
   header {
     @extend %padd--4;
     cursor: pointer;
@@ -44,7 +44,7 @@
 
 }
 
-.vcListCollapse1-01_icon {
+.vueListCollapse101_icon {
   @extend %display--inline-block;
   vertical-align: middle;
   
@@ -54,6 +54,6 @@
   }
 }
 
-.vcListCollapse1-01_content {
+.vueListCollapse101_content {
   @extend %padd--4;
 }

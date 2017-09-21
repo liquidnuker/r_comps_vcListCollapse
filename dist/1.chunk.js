@@ -58,7 +58,7 @@ webpackJsonp([1],{
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('nav', {
-    staticClass: "vcListCollapse1-01"
+    staticClass: "vueListCollapse101"
   }, [_c('header', {
     on: {
       "click": function($event) {
@@ -66,7 +66,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       }
     }
   }, [(_vm.lc1_collapse === false) ? _c('span', {
-    staticClass: "vcListCollapse1-01_icon"
+    staticClass: "vueListCollapse101_icon"
   }, [_c('svg', {
     attrs: {
       "xmlns": "http://www.w3.org/2000/svg",
@@ -77,7 +77,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "d": "M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
     }
   })])]) : _c('span', {
-    staticClass: "vcListCollapse1-01_icon"
+    staticClass: "vueListCollapse101_icon"
   }, [_c('svg', {
     attrs: {
       "xmlns": "http://www.w3.org/2000/svg",
@@ -96,7 +96,7 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
         expression: "lc1_collapse"
       }]
     }, [_c('li', [_c('div', {
-      staticClass: "vcListCollapse1-01_content"
+      staticClass: "vueListCollapse101_content"
     }, [_vm._v("\r\n        " + _vm._s(i.itemName) + "\r\n        ")])])])
   })], 2)
 }

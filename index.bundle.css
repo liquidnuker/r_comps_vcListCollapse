@@ -7,7 +7,7 @@
   .row:after {
     clear: both; }
 
-.vcListCollapse1-01 p, .vcListCollapse1-01_icon {
+.vueListCollapse101 p, .vueListCollapse101_icon {
   display: inline-block; }
 
 input, textarea, select, html, body, div, span, applet, object, iframe,
@@ -26,10 +26,10 @@ time, mark, audio, video {
   margin: 0;
   padding: 0; }
 
-.vcListCollapse1-01 header, .vcListCollapse1-01_content {
+.vueListCollapse101 header, .vueListCollapse101_content {
   padding: 4px; }
 
-.vcListCollapse1-01 p {
+.vueListCollapse101 p {
   font-weight: bold; }
 
 *,
@@ -782,33 +782,33 @@ body {
   .col-lg-1 {
     width: 8.33333333%; } }
 
-.vcListCollapse1-01 header {
+.vueListCollapse101 header {
   background-color: #141416; }
 
-.vcListCollapse1-01 p {
+.vueListCollapse101 p {
   color: #f0f0f0; }
 
-.vcListCollapse1-01 li {
+.vueListCollapse101 li {
   background-color: #1c1d22;
   color: #d5d5d5; }
 
-.vcListCollapse1-01 .vcListCollapse1-01_content {
+.vueListCollapse101 .vueListCollapse101_content {
   background-color: #343437; }
 
-.vcListCollapse1-01_icon svg {
+.vueListCollapse101_icon svg {
   border: 1px solid #000;
   background-color: #e6e6e6;
   fill: #be0101; }
 
-.vcListCollapse1-01 header {
+.vueListCollapse101 header {
   cursor: pointer; }
 
-.vcListCollapse1-01 p {
+.vueListCollapse101 p {
   vertical-align: middle; }
 
-.vcListCollapse1-01_icon {
+.vueListCollapse101_icon {
   vertical-align: middle; }
-  .vcListCollapse1-01_icon svg {
+  .vueListCollapse101_icon svg {
     width: 16px;
     height: 16px; }
 
